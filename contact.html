@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="group.html">Group Members</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="notes.html">Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="center-text">Contact Us</h1>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+            <label for="contact-type">Contact Type:</label>
+            <div>
+                <input type="radio" id="personal" name="contact-type" value="personal">
+                <label for="personal">Personal</label>
+                <input type="radio" id="business" name="contact-type" value="business">
+                <label for="business">Business</label>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 HTML & CSS Basics</p>
+    </footer>
+</body>
+</html>
